@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import logo from './images/logo.png';
 import './App.css';
+import Counter from "./components/Counter";
+import Button from "./components/Button";
+import { useState } from 'react';
 
 function App() {
+
+  const [numClicks, setNumClicks] = useState(0);
+
+  const handleClick = () => {
+    setNumClicks(numClicks + 1);
+  };
+
+  const restartClick = () => {
+    setNumClicks(0);
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+        <img className='logo' src={logo} alt='Logo RiandiCode' />
+        <div class="counter-box">
+          <Counter numClicks={numClicks} />
+          <div class="buttons">
+            <Button
+              text='Click'
+              isButtonClick={true}
+              handleClick={handleClick}
+            />
+            <Button
+              text='Reiniciar'
+              isButtonClick={false}
+              handleClick={restartClick}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
