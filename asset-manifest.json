@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/counter-clicks-react-learn-2/static/css/main.7b61141b.css",
+    "main.js": "/counter-clicks-react-learn-2/static/js/main.6a378366.js",
+    "static/media/logo.png": "/counter-clicks-react-learn-2/static/media/logo.c9eda4191eee211c0a6d.png",
+    "index.html": "/counter-clicks-react-learn-2/index.html",
+    "main.7b61141b.css.map": "/counter-clicks-react-learn-2/static/css/main.7b61141b.css.map",
+    "main.6a378366.js.map": "/counter-clicks-react-learn-2/static/js/main.6a378366.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b61141b.css",
+    "static/js/main.6a378366.js"
+  ]
+}
